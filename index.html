@@ -336,7 +336,7 @@
       animation-delay: var(--anim-delay, 0s);
     }
 
-    /* ขยายขนาดการแสดงผลรูปภาพตอนกดดูเพิ่มขึ้นอีก 30% ( scale 1.3 ) */
+    /* ขยายขนาดรูปใหญ่ขึ้นตามเดิม ( scale 1.3 ) */
     .polaroid.active {
       position: fixed !important;
       top: 50% !important;
@@ -367,11 +367,13 @@
       background-color: #ffffff;
     }
 
+    /* ปรับขนาดตัวหนังสือใต้ภาพให้เล็กลงกำลังดี ไม่ใหญ่ตามขนาดขยายของรูป */
     .polaroid.active .caption {
       opacity: 1;
       max-height: 140px;
-      margin-top: 12px;
-      font-size: 18px;
+      margin-top: 8px;
+      font-size: 12px;
+      line-height: 1.25;
       color: #4a2c31;
     }
 
